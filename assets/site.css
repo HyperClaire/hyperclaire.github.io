@@ -261,3 +261,8 @@ footer.site .in { padding-block: 56px 40px; display: flex; flex-direction: colum
 
 /* Not published while one of these remains: a blank only the publisher can fill. */
 .todo { outline: 2px dashed #FF6B5E; outline-offset: 2px; border-radius: 4px; background: rgba(255, 107, 94, .14); padding: 0 4px; }
+
+/* Double Issue's credits: the Apache License's full text, folded */
+.license { margin-top: 28px; background: var(--graphite); border: 1px solid var(--line); border-radius: 14px; padding: 0 20px; }
+.license summary { cursor: pointer; padding: 16px 0; font-weight: 600; }
+.license pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.5; color: var(--paper-body); margin: 0 0 18px; }
