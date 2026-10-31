@@ -57,6 +57,63 @@
   </div>
 </section>
 
+<section class="band" id="videos">
+  <div class="in">
+    <div class="band-head">
+      <div class="stack">
+        <div class="eyebrow"><span data-l="en">Videos</span><span data-l="fr">Vidéos</span><span data-l="vi">Video</span></div>
+        <h2 class="h2"><span data-l="en">Four short videos</span><span data-l="fr">Quatre courtes vidéos</span><span data-l="vi">Bốn video ngắn</span></h2>
+      </div>
+      <p><span data-l="en">Made from the game itself. Turn the sound on: the music is the game’s.</span><span data-l="fr">Montées à partir du jeu lui-même. Mettez le son&nbsp;: la musique est celle du jeu.</span><span data-l="vi">Dựng từ chính trò chơi, lời tiếng Anh. Nhớ bật tiếng: nhạc là nhạc của game.</span></p>
+    </div>
+    <div class="clips">
+      <figure class="clip">
+        <video controls playsinline preload="none" width="720" height="1280" src="../assets/video/two_thumbs_en.mp4" poster="../assets/video/two_thumbs_en.jpg" data-src-en="../assets/video/two_thumbs_en.mp4" data-src-fr="../assets/video/two_thumbs_fr.mp4" data-src-vi="../assets/video/two_thumbs_en.mp4" data-poster-en="../assets/video/two_thumbs_en.jpg" data-poster-fr="../assets/video/two_thumbs_fr.jpg" data-poster-vi="../assets/video/two_thumbs_en.jpg"></video>
+        <figcaption>
+          <h3><span data-l="en">One thumb each</span><span data-l="fr">Un pouce chacun</span><span data-l="vi">Mỗi ngón một đứa</span></h3>
+          <p data-l="en">Your left thumb steers the hero, your right thumb the thief.</p>
+          <p data-l="fr">Le pouce gauche guide le héros, le pouce droit le voleur.</p>
+          <p data-l="vi">Ngón cái trái lái anh hùng, ngón cái phải lái tên trộm.</p>
+        </figcaption>
+      </figure>
+      <figure class="clip">
+        <video controls playsinline preload="none" width="720" height="1280" src="../assets/video/editor_live_en.mp4" poster="../assets/video/editor_live_en.jpg" data-src-en="../assets/video/editor_live_en.mp4" data-src-fr="../assets/video/editor_live_fr.mp4" data-src-vi="../assets/video/editor_live_en.mp4" data-poster-en="../assets/video/editor_live_en.jpg" data-poster-fr="../assets/video/editor_live_fr.jpg" data-poster-vi="../assets/video/editor_live_en.jpg"></video>
+        <figcaption>
+          <h3><span data-l="en">The Editor, live</span><span data-l="fr">L’Éditeur en direct</span><span data-l="vi">Sếp Biên Tập lên sóng</span></h3>
+          <p data-l="en">The game’s boss explains the rules, then changes them.</p>
+          <p data-l="fr">Le patron du jeu explique les règles, puis les change.</p>
+          <p data-l="vi">Sếp giải thích luật chơi, rồi đổi luật.</p>
+        </figcaption>
+      </figure>
+      <figure class="clip">
+        <video controls playsinline preload="none" width="720" height="1280" src="../assets/video/crossover_loop_en.mp4" poster="../assets/video/crossover_loop_en.jpg" data-src-en="../assets/video/crossover_loop_en.mp4" data-src-fr="../assets/video/crossover_loop_fr.mp4" data-src-vi="../assets/video/crossover_loop_en.mp4" data-poster-en="../assets/video/crossover_loop_en.jpg" data-poster-fr="../assets/video/crossover_loop_fr.jpg" data-poster-vi="../assets/video/crossover_loop_en.jpg"></video>
+        <figcaption>
+          <h3><span data-l="en">CROSSOVER!</span><span data-l="fr">CROSSOVER&nbsp;!</span><span data-l="vi">CROSSOVER!</span></h3>
+          <p data-l="en">Land both at the same moment and the henchmen go.</p>
+          <p data-l="fr">Faites atterrir les deux au même moment, et les hommes de main disparaissent.</p>
+          <p data-l="vi">Cho hai đứa tiếp đất cùng lúc là tay sai biến mất.</p>
+        </figcaption>
+      </figure>
+      <figure class="clip">
+        <video controls playsinline preload="none" width="720" height="1280" src="../assets/video/pov_how_hard_en.mp4" poster="../assets/video/pov_how_hard_en.jpg" data-src-en="../assets/video/pov_how_hard_en.mp4" data-src-fr="../assets/video/pov_how_hard_fr.mp4" data-src-vi="../assets/video/pov_how_hard_en.mp4" data-poster-en="../assets/video/pov_how_hard_en.jpg" data-poster-fr="../assets/video/pov_how_hard_fr.jpg" data-poster-vi="../assets/video/pov_how_hard_en.jpg"></video>
+        <figcaption>
+          <h3><span data-l="en">How hard can it be?</span><span data-l="fr">Ça a l’air facile</span><span data-l="vi">Khó gì đâu?</span></h3>
+          <p data-l="en">Floor 0, floor 40, floor 100.</p>
+          <p data-l="fr">Étage 0, étage 40, étage 100.</p>
+          <p data-l="vi">Tầng 0, tầng 40, tầng 100.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<script>
+// One video plays at a time.
+document.addEventListener('play', function (e) {
+  var vs = document.querySelectorAll('.clip video');
+  for (var i = 0; i < vs.length; i++) if (vs[i] !== e.target) vs[i].pause();
+}, true);
+</script>
+
 <section class="band">
   <div class="in">
     <div class="band-head">
