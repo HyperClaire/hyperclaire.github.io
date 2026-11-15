@@ -280,3 +280,14 @@ footer.site .in { padding-block: 56px 40px; display: flex; flex-direction: colum
 .license { margin-top: 28px; background: var(--graphite); border: 1px solid var(--line); border-radius: 14px; padding: 0 20px; }
 .license summary { cursor: pointer; padding: 16px 0; font-weight: 600; }
 .license pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 12px; line-height: 1.5; color: var(--paper-body); margin: 0 0 18px; }
+
+/* Apps: an app's page, the phone beside the copy; the screenshots reuse the game page's video row. */
+.app-hero { display: flex; flex-wrap: wrap; align-items: center; gap: 40px 56px; }
+.app-copy { flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.app-copy .lead { max-width: 34em; }
+.app-copy .actions { padding-top: 8px; }
+.phone-shot { flex: 1 1 260px; min-width: 0; margin: 0; display: flex; justify-content: center; }
+.phone-shot img { width: min(100%, 320px); }
+.clip img { width: 100%; }
+.pillars.three { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+@media (max-width: 720px) { .phone-shot img { width: min(100%, 260px); } }
